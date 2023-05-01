@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+.carousel-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1.6rem;
+}
+
+.rating-area {
+    font-size: 0.6rem;
+    color: orange;
 }
