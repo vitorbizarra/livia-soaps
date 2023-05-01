@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+
     <title>Lívia Soaps</title>
 </head>
+
 <body>
-    <h1>Lívia Soaps</h1>
+    <nav class="navbar navbar-expand-lg px-3 fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Bootstrap" width="100" height="50">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#produtos">PRODUTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="owl-carousel owl-theme" id="main-carousel">
+        <div class="item carousel-image vh-100" style="background-image: url(https://picsum.photos/4000/4000);"></div>
+    </div>
+
+    <section class="products w-100 vh-100 bg-primary" id="produtos">
+        <div class="container-fluid py-5">
+            <h1 class="mt-5 text-white">PRODUTOS</h1>
+        </div>
+        <div class="owl-carousel owl-theme" id="products-carousel">
+            <div class="item">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="rating-area">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="d-flex">
+                            <div>
+                                <h4 class="card-title">Lorem Ipsum</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <span>R$ 20,00</span>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Aliquam alias ipsa quisquam maxime esse veritatis iste ex, vero voluptatem?
+                        </p>
+                        <div class="button-area">
+                            <button class="btn btn-outline-success w-100 fw-bold"><i class="bi bi-bag-plus"></i>
+                                COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-more d-flex py-4">
+            <button class="btn btn-dark mx-auto">Todos Produtos</button>
+        </div>
+    </section>
+    <section class="w-100 vh-100 bg-dark" id="contato">
+        <div class="container-fluid py-5">
+            <h1 class="mt-5 text-white">CONTATO</h1>
+        </div>
+        <div class="container">
+            <form action="">
+                
+            </form>
+        </div>
+    </section>
 </body>
+
+<footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#main-carousel").owlCarousel({
+                loop: true,
+                dots: false,
+                nav: true,
+                autoWidth: false,
+                items: 1,
+            });
+
+            $("#products-carousel").owlCarousel({
+                loop: true,
+                dots: false,
+                nav: true,
+                autoWidth: false,
+                center: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        margin: 10
+                    },
+                    576: {
+                        items: 4,
+                        margin: 20,
+                    }
+                },
+            });
+        });
+    </script>
+</footer>
+
 </html>
