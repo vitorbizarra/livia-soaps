@@ -117,12 +117,6 @@
     color: #70d9ff;
 }
 
-@media(max-width: 576px) {
-    #contact-info {
-        width: 100%;
-    }
-}
-
 footer {
     color: white;
 }
@@ -135,4 +129,14 @@ footer {
 
 .footer-links:hover {
     margin-left: 0.4rem;
+}
+
+@media(max-width: 576px) {
+    #contact-info {
+        width: 100% !important;
+    }
+    
+    .navbar-brand {
+        max-width: 25%;
+    }
 }
