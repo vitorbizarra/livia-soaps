@@ -5,6 +5,8 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    scroll-padding-top: 6rem;
+
 }
 
 .carousel-image {
@@ -14,11 +16,123 @@
 }
 
 .navbar {
-    font-family: 'Gayathri', sans-serif;
     font-size: 1.6rem;
+}
+
+.navbar-brand {
+    max-width: 15%;
+}
+
+.custom-font {
+    font-family: 'Gayathri', sans-serif;
+}
+
+.values-card {
+    background-color: #b5ebff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-big::before {
+    font-size: 2.6rem;
+}
+
+.products-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.products-nav::before {
+    font-size: 2.4rem;
+}
+
+.products-nav-left {
+    left: -5%;
+}
+
+.products-nav-right {
+    right: -5%;
+}
+
+.products-nav-mobile-left {
+    color: white;
+    left: 0%;
+}
+
+.products-nav-mobile-right {
+    color: white;
+    right: 0%;
 }
 
 .rating-area {
     font-size: 0.6rem;
     color: orange;
+}
+
+.btn-social {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-social:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.btn-social i {
+    color: black;
+}
+
+.btn-social:hover i {
+    color: white;
+}
+
+/* Contato */
+
+.g-map {
+    border: 0;
+    width: 100%;
+    height: 20rem;
+}
+
+.info-links {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.info-links:hover {
+    color: #70d9ff;
+}
+
+@media(max-width: 576px) {
+    #contact-info {
+        width: 100%;
+    }
+}
+
+footer {
+    color: white;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-links:hover {
+    margin-left: 0.4rem;
 }
