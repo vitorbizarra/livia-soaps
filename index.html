@@ -81,10 +81,10 @@
 
     <section class="container vh-75 bg-white mt-5" id="quem-somos">
         <div class="row h-100">
-            <div class="col d-flex">
+            <div class="col-12 col-md-6 d-flex mb-4">
                 <img src="assets/images/logo.png" alt="" class="w-100 my-auto">
             </div>
-            <div class="col d-flex">
+            <div class="col-12 col-md-6 d-flex">
                 <div class="my-auto">
                     <h2 class="custom-font fs-1">Quem Somos</h2>
                     <p class="custom-font">
@@ -263,20 +263,37 @@
 <footer class="bg-dark">
     <div class="container">
         <div class="row pt-4 pt-md-5">
-            <div class="col-12 col-md-4">
-                <div class="w-75">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="w-50 w-md-75">
                     <img src="assets/images/logo_text_white.png" class="img-fluid" alt="Logo Livia Soaps">
                 </div>
             </div>
-            <div class="col-12 col-md-4 custom-font d-flex flex-column fs-5">
+            <div class="col-12 col-md-4 custom-font d-flex flex-column fs-5 mb-4">
                 <a href="/" class="footer-links">Home</a>
                 <a href="quem-somos.html" class="footer-links">Quem Somos</a>
                 <a href="/" class="footer-links">Produtos</a>
                 <a href="contato.html" class="footer-links">Contato</a>
                 <a href="politica-de-privacidade" class="footer-links">Políticade Privacidade</a>
             </div>
-            <div class="col-12 col-md-4 fs-6">
-
+            <div class="col-12 col-md-4 fs-6 mb-4">
+                <form action="" class="form-newsletter">
+                    <p class="text-white custom-font mb-0 fs-5">Inscreva-se em nossa Newsletter</p>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="Qual seu nome?"
+                                class="form-control custom-font border border-light bg-dark text-white rounded-0">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="email" placeholder="Qual seu email?"
+                                class="form-control custom-font border border-light bg-dark text-white rounded-0">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-outline-light rounded-0 w-100">Cadastrar</button>
+                    </div>
+                </form>
             </div>
             <div class="col-12 mt-md-5">
                 <div class="text-center text-white pb-2 mt-5">
@@ -325,7 +342,13 @@
                     576: {
                         nav: true,
                         navText: ['<i class="bi bi-chevron-left products-nav products-nav-left">', '<i class="bi bi-chevron-right products-nav products-nav-right">'],
-                        items: 4,
+                        items: 2,
+                        margin: 20,
+                    },
+                    992: {
+                        nav: true,
+                        navText: ['<i class="bi bi-chevron-left products-nav products-nav-left">', '<i class="bi bi-chevron-right products-nav products-nav-right">'],
+                        items: 3,
                         margin: 20,
                     }
                 },

@@ -140,3 +140,7 @@ footer {
         max-width: 25%;
     }
 }
+
+.form-newsletter input::placeholder {
+    color: white;
+}
