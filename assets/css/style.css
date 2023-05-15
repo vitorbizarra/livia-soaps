@@ -130,6 +130,14 @@
     color: orange;
 }
 
+.product-body {
+    height: 14rem;
+}
+
+.product-description {
+    height: 6rem;
+}
+
 .btn-social {
     width: 3.2rem;
     height: 3.2rem;
