@@ -87,7 +87,7 @@
 }
 
 .values-card {
-    background-color: #b5ebff;
+    background-color: #8ee1ff;
     color: white;
     display: flex;
     flex-direction: column;
@@ -128,6 +128,14 @@
 .rating-area {
     font-size: 0.6rem;
     color: orange;
+}
+
+.product-body {
+    height: 14rem;
+}
+
+.product-description {
+    height: 6rem;
 }
 
 .btn-social {
